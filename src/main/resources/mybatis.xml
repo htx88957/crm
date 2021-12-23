@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <mappers>
+        <!--
+        package:指定Dao接口的包的位置，表示把包下的sql映射文件找到
+        1 SQL映射文件名和Dao接口名一致
+        2 sql映射文件名和Dao接口在同一目录
+        -->
+        <package name="org.example.dao"/>
+    </mappers>
+</configuration>
